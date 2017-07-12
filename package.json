@@ -1,0 +1,16 @@
+{
+  "name": "auto-close-html2",
+  "main": "./lib/auto-close-html2",
+  "version": "0.0.0",
+  "description": "Automatically close html tag, copied from autoclose",
+  "keywords": [
+      "html", "tag", "close"
+  ],
+  "repository": "https://github.com/yubaoquan/auto-close-html2",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
