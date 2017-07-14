@@ -9,9 +9,10 @@
     env: {
         browser: true,
         es6: true,
-        node: true
+        node: true,
     },
     globals: {
+        atom: true,
     },
     rules: {
         //句尾强制加分号
