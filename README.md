@@ -16,3 +16,6 @@ There are some auto close html tag packages on atom.io, but they all have sort o
 
 #### 0.3.2
 - Fix tag attributes take up multi lines cause auto close not work.
+
+#### 0.3.3
+-Fix bugs produced by 0.3.2
