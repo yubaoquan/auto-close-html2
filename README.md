@@ -22,3 +22,22 @@ There are some auto close html tag packages on atom.io, but they all have sort o
 
 #### 0.3.4
 -Stop continue close tag logic when typing slash or > in template brackets like`{#if a / b > c}`.
+
+#### 0.3.5
+-Auto backspace indent for tags that across multiple lines like this:
+
+before 0.3.5
+```
+<div
+    aaa="bbb"
+    ></div>
+```
+after 0.3.5
+```
+<div
+    aaa="bbb"
+></div>
+```
+
+#### 0.3.6
+-Add changelog of 0.3.5
