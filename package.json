@@ -1,7 +1,7 @@
 {
   "name": "auto-close-html2",
   "main": "./lib/auto-close-html2",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Automatically close html tag, copied from autoclose",
   "keywords": [
     "html",
