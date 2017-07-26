@@ -2,7 +2,7 @@
 
 There are some auto close html tag packages on atom.io, but they all have sort of bugs and it seems that the owners don't want to maintain the packages anymore. So I copied a package from [autoclose](https://atom.io/packages/autoclose) , and fixed its bug.
 
-![A screenshot of your package](https://raw.githubusercontent.com/yubaoquan/auto-close-html2/master/demolow.gif)
+![A screenshot of your package](https://raw.githubusercontent.com/yubaoquan/yubaoquan.github.io/master/images/auto-close-html2-demo/demolow.gif)
 
 
 # Changelog
@@ -41,3 +41,9 @@ after 0.3.5
 
 #### 0.3.6
 -Add changelog of 0.3.5
+
+
+#### 0.3.7
+-Auto close comment tag
+
+![A screenshot of 0.3.7](https://raw.githubusercontent.com/yubaoquan/yubaoquan.github.io/master/images/auto-close-html2-demo/commentDemo.gif)
