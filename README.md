@@ -43,7 +43,7 @@ after 0.3.5
 -Add changelog of 0.3.5
 
 
-#### 0.3.7
+#### 0.3.8
 -Auto close comment tag
 
 ![A screenshot of 0.3.7](https://raw.githubusercontent.com/yubaoquan/yubaoquan.github.io/master/images/auto-close-html2-demo/commentDemo.gif)
