@@ -41,5 +41,5 @@ after 0.3.5
 
 ![A screenshot of 0.3.7](https://raw.githubusercontent.com/yubaoquan/yubaoquan.github.io/master/images/auto-close-html2-demo/commentDemo.gif)
 
-0.3.8
+0.4.1
 - Add freemarker support
