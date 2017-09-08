@@ -11,13 +11,13 @@
 - Fix tag attributes take up multi lines cause auto close not work.
 
 ## 0.3.3
--Fix bugs produced by 0.3.2
+- Fix bugs produced by 0.3.2
 
 ## 0.3.4
--Stop continue close tag logic when typing slash or > in template brackets like`{#if a / b > c}`.
+- Stop continue close tag logic when typing slash or > in template brackets like`{#if a / b > c}`.
 
 ## 0.3.5
--Auto backspace indent for tags that across multiple lines like this:
+- Auto backspace indent for tags that across multiple lines like this:
 
 before 0.3.5
 ```
@@ -33,10 +33,13 @@ after 0.3.5
 ```
 
 ## 0.3.6
--Add changelog of 0.3.5
+- Add changelog of 0.3.5
 
 
 ## 0.3.7
--Auto close comment tag
+- Auto close comment tag
 
 ![A screenshot of 0.3.7](https://raw.githubusercontent.com/yubaoquan/yubaoquan.github.io/master/images/auto-close-html2-demo/commentDemo.gif)
+
+0.3.8
+- Add freemarker support
