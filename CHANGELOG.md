@@ -43,3 +43,6 @@ after 0.3.5
 
 0.4.1
 - Add freemarker support
+
+0.4.2
+- Add 3 more options for self-close tag

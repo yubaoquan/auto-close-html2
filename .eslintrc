@@ -9,10 +9,9 @@
     env: {
         browser: true,
         es6: true,
-        node: true,
+        node: true
     },
     globals: {
-        atom: true,
     },
     rules: {
         //句尾强制加分号
@@ -23,16 +22,16 @@
         no-tabs: error,
         //缩进一律四个空格
         indent: [error, 4, {
-        //case用一个缩进
-             SwitchCase: 1 ,
-             //变量声明用一个缩进
-             VariableDeclarator: 1 ,
-             outerIIFEBody: 1 ,
-             MemberExpression: 1 ,
-             FunctionDeclaration: {body: 1, parameters: 2} ,
-             FunctionExpression: {body: 1, parameters: 2} ,
-             CallExpression: {arguments: 1}
-             }
+            // case用一个缩进
+                SwitchCase: 1 ,
+                // 变量声明用一个缩进
+                VariableDeclarator: 1 ,
+                outerIIFEBody: 1 ,
+                MemberExpression: 1 ,
+                FunctionDeclaration: { body: 1, parameters: 1 },
+                FunctionExpression: { body: 1, parameters: 1 },
+                CallExpression: { arguments: 1 }
+            }
         ],
         //不允许多个空行
         no-multiple-empty-lines: error,
@@ -40,8 +39,6 @@
         space-before-function-paren: [error, never],
         //禁止在圆括号内使用空格, ( 左括号右边和右括号左边 )
         space-in-parens: [error, never],
-        //禁止在数组的方括号内使用空格, 同上
-        array-bracket-spacing: [error, never],
         //在一元操作符前后使用空格: 保留字允许空格, 操作符不允许空格
         space-unary-ops: [
             error, {
@@ -52,6 +49,8 @@
         comma-spacing: [error, { before: false, after: true }],
         //禁止逗号前置
         comma-style: [error, last],
+        // 对象/数组结尾逗号
+        comma-dangle: [error, always-multiline],
         //禁止在在计算的属性的方括号中使用空格
         computed-property-spacing: [error, never],
         //强制使用1tbs风格的代码块括号 见http://eslint.cn/docs/rules/brace-style
@@ -135,11 +134,6 @@
         // 禁止使用未声明的变量
         no-undef: 2,
         arrow-spacing: error,
-        // 回调使用箭头函数
-        prefer-arrow-callback: [error, {
-            allowUnboundThis: false,
-            allowNamedFunctions: true
-        }],
         // let和const优先使用const
         prefer-const: error,
         // 注释双斜杠后加一个空格, ----和++++例外
@@ -178,6 +172,12 @@
         //         b = 2;
         // 必须 var a = 1;
         //     var b = 2;
-        one-var: [error, never]
+        one-var: [error, never],
+        // Disallow arrow functions where they could be confused with comparisons
+        no-confusing-arrow: [error, {allowParens: true}],
+        arrow-parens: [error, always],
+        no-var: error,
+        no-const-assign: error,
+        no-multi-spaces: error,
     }
 }
