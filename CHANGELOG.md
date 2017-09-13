@@ -51,3 +51,6 @@ after 0.3.5
 - Change `Disabled File Extensions` to `Enabled File Types` because I think file type having html-like content is less than file type not having html-like content.
 
 - Auto detect and use the editor setting of `Tab Type` and `Tab Length`. If tab type is set to `hard`, the indent in `auto-close-html2` will be tab, otherwise whitespace.
+
+0.6.1
+- Update description of settings.

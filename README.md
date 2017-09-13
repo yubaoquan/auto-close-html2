@@ -6,9 +6,9 @@ There are some auto close html tag packages on atom.io, but they all have sort o
 
 # Settings
 - `Add Slash To Self Close Tag`: Auto add a slash when close a self-close tag.
-- `Disabled File Extensions`: Files with these extensions will not trigger auto close.
-- `Insert Whitespace On Close`: Auto add a whitespace if tag is self-close and there is no whitespace before > or />
-- `Self Close Tags`: Define your own custom self-close tags, these tags will behave like self-close tags like img, br
+- `Enabled File Types`: Files with these extensions will trigger auto close, default file type is `html`. (comma split)
+- `Insert Whitespace On Close`: Auto add a whitespace if tag is self-close and there is no whitespace before `>` or `/>`
+- `Self Close Tags`: Define your own custom self-close tags, these tags will behave like self-close tags like `img`, `br`. (comma split)
 - `Slash Trigger Auto Close`: When typing slash and the tag is self-close tag, close the tag.
 
 # Changelog
@@ -67,3 +67,6 @@ after 0.3.5
 - Change `Disabled File Extensions` to `Enabled File Types` because I think file type having html-like content is less than file type not having html-like content.
 
 - Auto detect and use the editor setting of `Tab Type` and `Tab Length`. If tab type is set to `hard`, the indent in `auto-close-html2` will be tab, otherwise whitespace.
+
+0.6.1
+- Update description of settings.
