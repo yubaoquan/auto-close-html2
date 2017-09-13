@@ -46,3 +46,8 @@ after 0.3.5
 
 0.5.0
 - Add 3 more options for self-close tag
+
+0.6.0
+- Change `Disabled File Extensions` to `Enabled File Types` because I think file type having html-like content is less than file type not having html-like content.
+
+- Auto detect and use the editor setting of `Tab Type` and `Tab Length`. If tab type is set to `hard`, the indent in `auto-close-html2` will be tab, otherwise whitespace.
