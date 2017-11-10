@@ -1,1 +1,289 @@
-/Users/baoquanyu/Documents/code/my/my_config_files/.eslintrc
+{
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "globals": {},
+    "rules": {
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-mixed-spaces-and-tabs": "error",
+        "no-tabs": "error",
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1,
+                "VariableDeclarator": 1,
+                "outerIIFEBody": 1,
+                "MemberExpression": 1,
+                "FunctionDeclaration": {
+                    "body": 1,
+                    "parameters": 1
+                },
+                "FunctionExpression": {
+                    "body": 1,
+                    "parameters": 1
+                },
+                "CallExpression": {
+                    "arguments": 1
+                }
+            }
+        ],
+        //不允许多个空行
+        "no-multiple-empty-lines": "error",
+        //禁止在 function的左括号之前使用空格
+        "space-before-function-paren": [
+            "error",
+            {
+                "named": "never",
+                "anonymous": "never",
+                "asyncArrow": "always"
+            }
+        ],
+        //禁止在圆括号内使用空格, ( 左括号右边和右括号左边 )
+        "space-in-parens": [
+            "error",
+            "never"
+        ],
+        //在一元操作符前后使用空格: 保留字允许空格, 操作符不允许空格
+        "space-unary-ops": [
+            "error",
+            {
+                "words": true,
+                "nonwords": false
+            }
+        ],
+        //逗号前禁止有空格, 逗号后必须有空格
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        //禁止逗号前置
+        "comma-style": [
+            "error",
+            "last"
+        ],
+        // 对象/数组结尾逗号
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        //禁止在在计算的属性的方括号中使用空格
+        "computed-property-spacing": [
+            "error",
+            "never"
+        ],
+        //强制使用1tbs风格的代码块括号 见http://eslint.cn/docs/rules/brace-style
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        //禁止函数调用时括号左边有空格
+        "func-call-spacing": [
+            "error",
+            "never"
+        ],
+        //关键字前后必须有空格, (function后必须无空格)
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        //对象名值对的冒号前禁止有空格, 冒号后必须有空格
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "afterColon": true,
+                "mode": "strict"
+            }
+        ],
+        //禁止条件表达式中出现赋值操作符
+        "no-cond-assign": "error",
+        //禁止使用嵌套的三元表达式
+        "no-nested-ternary": "error",
+        //禁止可以表达为更简单结构的三元操作符
+        "no-unneeded-ternary": "error",
+        //强制使用驼峰命名 MY_FAVORITE_COLOR 这种常量命名是允许的
+        "camelcase": "warn",
+        //禁止对 Function 对象使用 new 操作符
+        "no-new-func": "error",
+        //禁止对 String，Number 和 Boolean 使用 new 操作符
+        "no-new-wrappers": "error",
+        //禁止用对Array使用 new 操作符
+        "no-array-constructor": "error",
+        //禁止对symbol使用new操作符
+        "no-new-symbol": "error",
+        //尽可能使用点号取属性
+        "dot-notation": "error",
+        //当没有严格要求时，禁止对象字面量属性名称使用引号
+        "quote-props": [
+            "error",
+            "as-needed"
+        ],
+        //iife必须用括号包起来
+        "wrap-iife": "error",
+        //禁用 arguments.caller 或 arguments.callee
+        "no-caller": "error",
+        //禁止不必要的 .call() 和 .apply()
+        "no-useless-call": "error",
+        //this的别名强制使用ctx
+        "consistent-this": [
+            "error",
+            "ctx"
+        ],
+        //禁止使用eval
+        "no-eval": "error",
+        //禁止使用__proto__
+        "no-proto": "error",
+        //禁止使用with语句
+        "no-with": "error",
+        //禁用 __iterator__ 属性
+        "no-iterator": "error",
+        //禁用void操作符
+        "no-void": "error",
+        //禁用标签语句
+        "no-labels": "error",
+        //要求使用 isNaN() 检查 NaN
+        "use-isnan": "error",
+        //不建议使用位运算符
+        "no-bitwise": "error",
+        //禁止抛出异常字面量 必须用new Error
+        "no-throw-literal": "error",
+        //禁止在条件中使用常量表达式
+        "no-constant-condition": "error",
+        //禁止不必要的布尔转换
+        "no-extra-boolean-cast": "error",
+        //要求调用无参构造函数时有圆括号
+        "new-parens": "error",
+        // 禁用 debugger
+        "no-debugger": "error",
+        // 禁止 function 定义中出现重名参数
+        "no-dupe-args": "error",
+        // 禁止对象字面量中出现重复的 key
+        "no-dupe-keys": "error",
+        // 禁止对 function 声明重新赋值
+        "no-func-assign": "error",
+        // 警告未使用的变量
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "none"
+            }
+        ],
+        // 花括号前加空格
+        "space-before-blocks": "error",
+        // 禁止使用未声明的变量
+        "no-undef": "error",
+        "arrow-spacing": "error",
+        // let和const优先使用const
+        "prefer-const": "error",
+        // 注释双斜杠后加一个空格, ----和++++例外
+        "spaced-comment": [
+            "error",
+            "always",
+            {
+                "exceptions": [
+                    "-",
+                    "+"
+                ]
+            }
+        ],
+        // 代码块花括号内不允许有空行
+        "padded-blocks": [
+            "error",
+            "never"
+        ],
+        // 要求花括号内有空格 (除了 {})
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        // if else 后必须加花括号
+        "curly": "error",
+        // 一行最大长度
+        "max-len": [
+            "error",
+            100,
+            {
+                "ignoreComments": true,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        // 要求中缀操作符周围有空格 a + b
+        "space-infix-ops": "error",
+        // 避免使用不必要的字符串拼接 var a = '1' + '0';
+        "no-useless-concat": "error",
+        // 多行字符串要相加，而不是用链接符
+        "no-multi-str": 1,
+        // 字符串使用单引号
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        // 禁止同名导入/导出
+        // import { foo as foo } from "bar";
+        // export { foo as foo };
+        "no-useless-rename": [
+            "error",
+            {
+                "ignoreDestructuring": false,
+                "ignoreImport": false,
+                "ignoreExport": false
+            }
+        ],
+        // 禁止 var a = 1,
+        //         b = error;
+        // 必须 var a = 1;
+        //     var b = error;
+        "one-var": [
+            "error",
+            "never"
+        ],
+        // Disallow arrow functions where they could be confused with comparisons
+        "no-confusing-arrow": [
+            "error",
+            {
+                "allowParens": true
+            }
+        ],
+        "arrow-parens": [
+            "warn",
+            "as-needed"
+        ],
+        "no-var": "error",
+        "no-const-assign": "error",
+        "no-multi-spaces": "error",
+        "no-duplicate-imports": "error",
+        "no-use-before-define": [
+            "error",
+            {
+                "variables": true,
+                "functions": false
+            }
+        ]
+    }
+}
